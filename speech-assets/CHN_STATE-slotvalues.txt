@@ -1,0 +1,34 @@
+Beijing Municipality
+Tianjin Municipality
+Heibei Province
+Shanxi Province
+Inner Mongolia Autonomous Region
+Liaoning Province
+Jilin Province
+Heilongjiang Province
+Shanghai Municipality
+Jiangsu Province
+Zhejiang Province
+Anhui Province
+Fujian Province
+Jiangxi Province
+Shangdong Province
+Henan Province
+Hubei Province
+Hunan Province
+Guangdong Province
+Guangxi Zhuang Autonomous Region
+Hainan Province
+Chongqing Municipality
+Sichuan Province
+Guizhou Province
+Yunnnan Province
+Tibet Autonomous Region
+Shaanxi Province
+Gansu Province
+Qinghai Province
+Ningxia Hui Autonomous Region
+Xinjiang Uyghur Autonomous Region
+Taiwan Province
+Hong Kong Special Administrative Region
+Macau Special Administrative Region

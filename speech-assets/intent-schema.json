@@ -1,0 +1,12 @@
+{"intents": [
+    {"intent": "AnswerIntent", "slots":[{"name": "StateName", "type": "CHN_STATE"},
+                                        {"name": "Capital", "type": "CHN_CITY"}, 
+                                        {"name": "Abbreviation", "type": "CHN_STATE_ABBR"}
+                                        ]},
+    {"intent": "QuizIntent"},
+    {"intent": "AMAZON.StopIntent"},
+    {"intent": "AMAZON.CancelIntent"},
+    {"intent": "AMAZON.StartOverIntent"},
+    {"intent": "AMAZON.HelpIntent"}
+  ]
+}

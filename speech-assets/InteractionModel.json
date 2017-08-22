@@ -1,0 +1,593 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StartOverIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "AnswerIntent",
+      "samples": [
+        "{StateName}",
+        "{Capital}",
+        "{Abbreviation}",
+        "tell me about {StateName}",
+        "tell me about {Capital}",
+        "tell me about {Abbreviation}",
+        "what do you know about {StateName}",
+        "what do you know about {Capital}",
+        "what do you know about {Abbreviation}",
+        "{StateName} information",
+        "{Capital} information",
+        "{Abbreviation} information"
+      ],
+      "slots": [
+        {
+          "name": "StateName",
+          "type": "CHN_STATE",
+          "samples": []
+        },
+        {
+          "name": "Capital",
+          "type": "CHN_CITY",
+          "samples": []
+        },
+        {
+          "name": "Abbreviation",
+          "type": "CHN_STATE_ABBR",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "QuizIntent",
+      "samples": [
+        "start a quiz",
+        "start a quiz game",
+        "and start a quiz",
+        "and quiz me",
+        "for a quiz",
+        "a quiz"
+      ],
+      "slots": []
+    }
+  ],
+  "types": [
+    {
+      "name": "CHN_STATE",
+      "values": [
+        {
+          "name": {
+            "value": "Beijing Municipality"
+          }
+        },
+        {
+          "name": {
+            "value": "Tianjin Municipality"
+          }
+        },
+        {
+          "name": {
+            "value": "Heibei Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Shanxi Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Inner Mongolia Autonomous Region"
+          }
+        },
+        {
+          "name": {
+            "value": "Liaoning Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Jilin Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Heilongjiang Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Shanghai Municipality"
+          }
+        },
+        {
+          "name": {
+            "value": "Jiangsu Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Zhejiang Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Anhui Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Fujian Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Jiangxi Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Shangdong Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Henan Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Hubei Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Hunan Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Guangdong Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Guangxi Zhuang Autonomous Region"
+          }
+        },
+        {
+          "name": {
+            "value": "Hainan Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Chongqing Municipality"
+          }
+        },
+        {
+          "name": {
+            "value": "Sichuan Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Guizhou Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Yunnnan Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Tibet Autonomous Region"
+          }
+        },
+        {
+          "name": {
+            "value": "Shaanxi Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Gansu Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Qinghai Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Ningxia Hui Autonomous Region"
+          }
+        },
+        {
+          "name": {
+            "value": "Xinjiang Uyghur Autonomous Region"
+          }
+        },
+        {
+          "name": {
+            "value": "Taiwan Province"
+          }
+        },
+        {
+          "name": {
+            "value": "Hong Kong Special Administrative Region"
+          }
+        },
+        {
+          "name": {
+            "value": "Macau Special Administrative Region"
+          }
+        }
+       ]
+     },
+    {
+      "name": "CHN_CITY",
+      "values": [
+        {
+          "name": {
+            "value": "Beijing"
+          }
+        },
+        {
+          "name": {
+            "value": "Tianjin"
+          }
+        },
+        {
+          "name": {
+            "value": "Shijiazhuang"
+          }
+        },
+        {
+          "name": {
+            "value": "Taiyuan"
+          }
+        },
+        {
+          "name": {
+            "value": "Hohhot"
+          }
+        },
+        {
+          "name": {
+            "value": "Shenyang"
+          }
+        },
+        {
+          "name": {
+            "value": "Changchun"
+          }
+        },
+        {
+          "name": {
+            "value": "Harbin"
+          }
+        },
+        {
+          "name": {
+            "value": "Shanghai"
+          }
+        },
+        {
+          "name": {
+            "value": "Nanjing"
+          }
+        },
+        {
+          "name": {
+            "value": "Hangzhou"
+          }
+        },
+        {
+          "name": {
+            "value": "Hefei"
+          }
+        },
+        {
+          "name": {
+            "value": "Fuzhou"
+          }
+        },
+        {
+          "name": {
+            "value": "Nanchang"
+          }
+        },
+        {
+          "name": {
+            "value": "Jinan"
+          }
+        },
+        {
+          "name": {
+            "value": "Zhengzhou"
+          }
+        },
+        {
+          "name": {
+            "value": "Wuhan"
+          }
+        },
+        {
+          "name": {
+            "value": "Changsha"
+          }
+        },
+        {
+          "name": {
+            "value": "Guangzhou"
+          }
+        },
+        {
+          "name": {
+            "value": "Nanning"
+          }
+        },
+        {
+          "name": {
+            "value": "Haikou"
+          }
+        },
+        {
+          "name": {
+            "value": "Chongqing"
+          }
+        },
+        {
+          "name": {
+            "value": "Chengdu"
+          }
+        },
+        {
+          "name": {
+            "value": "Guiyang"
+          }
+        },
+        {
+          "name": {
+            "value": "Kunming"
+          }
+        },
+        {
+          "name": {
+            "value": "Lhasa"
+          }
+        },
+        {
+          "name": {
+            "value": "Xi'an"
+          }
+        },
+        {
+          "name": {
+            "value": "Lanzhou"
+          }
+        },
+        {
+          "name": {
+            "value": "Xining"
+          }
+        },
+        {
+          "name": {
+            "value": "Yinchuan"
+          }
+        },
+        {
+          "name": {
+            "value": "Ürümqi"
+          }
+        },
+        {
+          "name": {
+            "value": "Taipei"
+          }
+        },
+        {
+          "name": {
+            "value": "Hong Kong"
+          }
+        },
+        {
+          "name": {
+            "value": "Macau"
+          }
+        }
+       ]
+     },
+    {
+      "name": "CHN_STATE_ABBR",
+      "values": [
+        {
+          "name": {
+            "value": "Jing"
+          }
+        },
+        {
+          "name": {
+            "value": "Jīn"
+          }
+        },
+        {
+          "name": {
+            "value": "Jì"
+          }
+        },
+        {
+          "name": {
+            "value": "Jìn"
+          }
+        },
+        {
+          "name": {
+            "value": "Nei Menggu"
+          }
+        },
+        {
+          "name": {
+            "value": "Liao"
+          }
+        },
+        {
+          "name": {
+            "value": "Jí"
+          }
+        },
+        {
+          "name": {
+            "value": "Hei"
+          }
+        },
+        {
+          "name": {
+            "value": "Hu"
+          }
+        },
+        {
+          "name": {
+            "value": "Su"
+          }
+        },
+        {
+          "name": {
+            "value": "Zhe"
+          }
+        },
+        {
+          "name": {
+            "value": "Wan"
+          }
+        },
+        {
+          "name": {
+            "value": "Min"
+          }
+        },
+        {
+          "name": {
+            "value": "Gàn"
+          }
+        },
+        {
+          "name": {
+            "value": "Lu"
+          }
+        },
+        {
+          "name": {
+            "value": "Yù"
+          }
+        },
+        {
+          "name": {
+            "value": "E"
+          }
+        },
+        {
+          "name": {
+            "value": "Xiang"
+          }
+        },
+        {
+          "name": {
+            "value": "Yue"
+          }
+        },
+        {
+          "name": {
+            "value": "Gui"
+          }
+        },
+        {
+          "name": {
+            "value": "Qiong"
+          }
+        },
+        {
+          "name": {
+            "value": "Yú"
+          }
+        },
+        {
+          "name": {
+            "value": "Chuan"
+          }
+        },
+        {
+          "name": {
+            "value": "Qian"
+          }
+        },
+        {
+          "name": {
+            "value": "Yun"
+          }
+        },
+        {
+          "name": {
+            "value": "Zang"
+          }
+        },
+        {
+          "name": {
+            "value": "Shan"
+          }
+        },
+        {
+          "name": {
+            "value": "Gān"
+          }
+        },
+        {
+          "name": {
+            "value": "Qing"
+          }
+        },
+        {
+          "name": {
+            "value": "Ning"
+          }
+        },
+        {
+          "name": {
+            "value": "Xin"
+          }
+        },
+        {
+          "name": {
+            "value": "Tai"
+          }
+        },
+        {
+          "name": {
+            "value": "Gang"
+          }
+        },
+        {
+          "name": {
+            "value": "Ao"
+          }
+        }
+       ]
+     }
+   ]
+}
