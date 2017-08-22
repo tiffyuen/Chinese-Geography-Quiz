@@ -1,0 +1,273 @@
+h1 {
+    font-family: "Times New Roman", "Helvetica", "Arial", sans-serif;
+    color: #7d4f3e;
+    font-size: 50px;
+    font-weight: 550;
+    border-bottom: 1px solid #885541;
+    align-self: stretch;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+}
+
+body {
+     font-family: "Times New Roman", "Helvetica", "Arial", sans-serif;
+     display: flex;
+     min-height: 100vh;  /* need this line to tell body to fill viewport */
+     flex-direction: column;
+     font-size: large;
+     align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-self: stretch; fill horizontal space */
+}
+
+div#photosContainer {
+	/*background-color: linen;*/
+	margin: 10px;
+        width: 90%;
+	/* stuff about this container */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	/* stuff about this item */
+	align-self: stretch; /* fill horizontal space */
+}
+./labels {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width:200px;
+	border:2px solid black;
+}
+.smallLabel {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+
+div.flexy {
+	width: 297px;
+	height: 300px;
+}
+
+.flexy > .tagMenu{
+	position: relative;	
+	left: -77px;
+	bottom: 20px;
+}
+
+img.flickrPhoto {
+	margin: 20px;
+	width: 200px;
+	height: 200px; 
+}
+
+nav {
+    min-height: 100vh;   
+    background-color: #885541;
+    color: white;
+    max-width:250px;
+    width: 25%;
+}
+
+button {
+    background-color: #885541;
+    border: 1px solid #885541;
+    color: white;
+    font-size: x-large;
+}
+
+img#theImage {
+    margin: 20px;
+	height: 200px;
+    -webkit-filter: blur(5px);
+    /*filter: hue-rotate(45deg);*/
+}
+
+div#progress {
+	display: none;
+}
+
+#progress p {
+	display: block;
+	width: 240px;
+	padding: 2px 5px;
+	margin: 2px 0;
+	border: 1px inset #446;
+	border-radius: 5px;
+}
+
+#progress p.success { background: #0c0 none 0 0 no-repeat; }
+
+#progress p.failed { background: #c00 none 0 0 no-repeat; }
+
+div.clicked {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    top: -143px;
+    left: 91px;
+    width: 125px;
+    background-color: #885541;
+    border: 2px solid #4c2c1c;
+}
+
+.clicked p {
+    display: flex;
+    width: 115px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    border-bottom: 2px solid #4c2c1c;
+}
+
+div#blank {
+    width: 125px;
+}
+
+#blank > img {
+    position: relative;
+    float: right;
+}
+
+div.showUpload {
+    flex-direction: row;
+    width: 100%;
+}
+
+.showUpload button {
+	width: 240px;
+}
+div#uploadDropDown{
+    display:none;
+    flex-direction: row; /*hide display until clicked*/
+    background-color: #f0eae7;
+}
+
+button#inputButton{
+    background-color: #885541;
+    border: 2px solid #4c2c1c;
+    font-size: medium;
+}
+
+div#filterDropDown > p {
+  display: inline;
+  font-size: 28px;
+  padding-bottom: 20px;
+}
+
+input#fileSelector{
+    align-self: center;
+    margin: 20px 10px 10px 10px;
+    width: 210px;
+    color: #885541;
+    font-size: medium;
+}
+
+button#uploadButton {
+  margin: 10px;
+    border: 1px solid #4c2c1c;
+}
+
+img.navImg {
+    vertical-align: middle;
+}
+
+div#filter {
+    flex-direction: row;
+    background-color: #f0eae7;
+}
+
+img#filterImg {
+    margin-left: 4%;
+    vertical-align: middle;
+
+}
+#filter > div > button {
+  margin: 5px;
+  display:none;
+  font-size: 20px;
+}
+#filter > div {
+  margin: 0px 15px 10px 10px;
+  flex-direction: row; }
+input#filterBar {
+    display:none;
+    background-color: white;
+    border: 1px solid #885541;
+    margin: 0px 15px 10px 20px;
+    width: 180px;
+    height: auto;
+    font-size: x-large;
+}
+
+::-webkit-input-placeholder {
+     color: #c9b3aa;
+}
+
+@media (max-width: 480px) {
+    h1{
+        border-bottom: 0px;
+    }   
+
+    main {
+        flex-direction: column;
+    }   
+    
+    div#nav{
+        display: flex;
+        flex-direction: row;
+        min-height: 0vh;
+        order: 1;
+        background-color: transparent;
+    }   
+    
+    .showUpload button{
+        background-color: transparent;
+        border: 0px;
+    }   
+    
+    div#filterDropDown {
+        background-color: transparent;
+    }   
+    button#favButton{
+        background-color: transparent;
+        border: 0px;
+        
+    }   
+    div#photosContainer{
+        flex-direction: column;
+        order: 2;
+   }   
+
+   div.flexy {
+	width: 297px;
+        height: 247px;
+   }
+   .flexy > .tagMenu{
+        position: none;
+        left: 363px;
+        bottom: 80px;
+        
+   }
+    
+   #uploadDropDown p {
+   	visibility: hidden;
+   }
+   #filterDropDown p {
+
+	visibility:hidden;
+   }       
+   div#progress {
+	display: none;
+   }
+}
+
